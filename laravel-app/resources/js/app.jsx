@@ -11,7 +11,7 @@ function App() {
         setLoading(true);
         setError(null);
         setFetched(true);
-        fetch('https://jsonplaceholder.typicode.com/posts?_limit=5')
+        fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
             .then((response) => {
                 if (!response.ok) throw new Error('Network response was not ok');
                 return response.json();
